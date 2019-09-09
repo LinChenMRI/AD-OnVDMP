@@ -1,9 +1,9 @@
 clear all; close all; clc;
 addpath('toolbox')
 
+load Tau.mat
 
-load WT.mat
-
+%% plot dynamic curve
 Time = linspace(0,15*size(CSFImage,3),size(CSFImage,3))/60;
 figure;
 plot(Time,Image2Signal(TissueImage,Mask_Cortex),'*','MarkerSize',9); 
@@ -21,6 +21,7 @@ set(gca,'FontName','Arial','FontSize',18,'fontweight','b','LineWidth',3,'GridLin
 title('CSF signal');
 xlim([0,max(Time)]);
 
+%% calculate AUC map
 [AUCMap_CSF,AUCMap_CSF_dyn] = calculateCovAUCMap(CSFImage,Mask_CSF);
 imshow3dimage(AUCMap_CSF_dyn,6);mycolormap,mycolorbar;caxis([-10,10]);
 set (gcf,'Position',[550 315 1174 592], 'color','w'); title('CSF AUC Map dyn');
@@ -32,3 +33,6 @@ figure; imshow(AUCMap_Tissue,[], 'InitialMagnification','fit'); mycolormap(1);ca
 set (gcf,'Position',[550 315 486 586], 'color','w');  title('Tissue AUC Map');
 imshow3dimage(AUCMap_Tissue_dyn,6);mycolormap,mycolorbar;caxis([-10,10]);
 set (gcf,'Position',[550 315 1174 592], 'color','w');title('Tissue AUC Map dyn');
+
+% save('Tau_AUCMap.mat','AUCMap_Tissue','AUCMap_Tissue_dyn','AUCMap_CSF','AUCMap_CSF_dyn');
+% save('WT_AUCMap.mat','AUCMap_Tissue','AUCMap_Tissue_dyn','AUCMap_CSF','AUCMap_CSF_dyn');
