@@ -1,7 +1,8 @@
 clear all; close all; clc;
 addpath('toolbox')
 
-load Tau.mat
+% load([cd,filesep,'data',filesep,'Tau.mat']);
+load([cd,filesep,'data',filesep,'WT.mat']);
 
 %% plot dynamic curve
 Time = linspace(0,15*size(CSFImage,3),size(CSFImage,3))/60;
