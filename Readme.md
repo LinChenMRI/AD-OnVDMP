@@ -1,6 +1,6 @@
 # Demo of glucose uptake and clearance in Alzheimer's disease mouse brain detected by onVDMP MRI
 
-Author: Lin Chen, Jiadi Xu*
+Authors: Lin Chen, Jiadi Xu*
 
 Email: chenlin@jhu.edu   chenlin0430@gmail.com   XuJ@kennedykrieger.org
 
