@@ -1,4 +1,4 @@
-# Demo of glucose uptake and clearance in Alzheimer's disease mouse brain detected by onVDMP MRI
+# Demo of Glucose uptake and clearance in Alzheimer's disease mouse brain with tauopathy detected by onVDMP MRI
 
 Authors: Lin Chen, Jiadi Xu*
 
