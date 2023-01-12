@@ -16,6 +16,4 @@ Lin Chen, Zhiliang Wei, Kannie Chan, Jianpan Huang, Xiang Xu, Philip C. Wong, Ha
 
 Welcome your comments and suggestions.
 
-For more information, please visit: https://linchenmri.com
-
 September 09, 2019
